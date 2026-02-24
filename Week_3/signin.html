@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Full Stack Web Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Semantic Header -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-brand">FullStack Project</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="ecommerce.html">Shop</a></li>
+                <li><a href="signin.html" class="active">Sign In</a></li>
+                <li><a href="registration.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="auth-main">
+        <div class="auth-container">
+            <section class="auth-section signin-section">
+                <h1>Sign In</h1>
+                <p class="auth-intro">Access your account to continue</p>
+
+                <form class="auth-form" id="signInForm" onsubmit="handleSignIn(event)">
+
+                    <!-- Email Input -->
+                    <div class="form-group">
+                        <label for="signin-email">Email Address <span class="required">*</span></label>
+                        <input
+                            type="email"
+                            id="signin-email"
+                            name="email"
+                            placeholder="Enter your email"
+                            aria-label="Email address for sign in"
+                            required
+                        >
+                        <small class="form-hint">We'll never share your email with anyone</small>
+                    </div>
+
+                    <!-- Password Input -->
+                    <div class="form-group">
+                        <label for="signin-password">Password <span class="required">*</span></label>
+                        <input
+                            type="password"
+                            id="signin-password"
+                            name="password"
+                            placeholder="Enter your password"
+                            aria-label="Password for sign in"
+                            required
+                        >
+                        <small class="form-hint">Must be at least 6 characters</small>
+                    </div>
+
+                    <!-- Remember Me -->
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="signin-remember" name="remember">
+                        <label for="signin-remember">Remember me</label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+
+                    <!-- Additional Links -->
+                    <div class="auth-links">
+                        <a href="#" class="link-secondary">Forgot password?</a>
+                    </div>
+
+                </form>
+
+                <!-- Sign Up Link -->
+                <div class="auth-footer">
+                    <p>Don't have an account? <a href="registration.html" class="link-primary">Create one</a></p>
+                </div>
+
+            </section>
+
+            <!-- Sign In Tips -->
+            <section class="auth-info">
+                <h2>Sign In Tips</h2>
+                <ul>
+                    <li>✓ Use the email you registered with</li>
+                    <li>✓ Passwords are case-sensitive</li>
+                    <li>✓ Keep your credentials secure</li>
+                    <li>✓ Use strong, unique passwords</li>
+                    <li>✓ Enable two-factor authentication when available</li>
+                </ul>
+            </section>
+
+        </div>
+
+        <!-- Success Message (Hidden by default) -->
+        <div id="signInMessage" class="auth-message" style="display: none;"></div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Full Stack Web Development Project. All rights reserved.</p>
+        <p>Session 12 - HTML Forms & Validation</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

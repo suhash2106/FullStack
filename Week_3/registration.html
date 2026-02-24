@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tantraz Event Registration - Full Stack Web Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Semantic Header -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-brand">FullStack Project</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="ecommerce.html">Shop</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="registration.html" class="active">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="auth-main">
+        <div class="auth-container registration-container">
+
+            <section class="auth-section registration-section">
+                <h1>Tantraz Event Registration</h1>
+                <p class="auth-intro">Join us for this amazing tech and cultural event</p>
+
+                <form class="auth-form registration-form" id="registrationForm" onsubmit="handleRegistration(event)" novalidate>
+
+                    <!-- Full Name -->
+                    <div class="form-group">
+                        <label for="full-name">Full Name <span class="required">*</span></label>
+                        <input
+                            type="text"
+                            id="full-name"
+                            name="fullName"
+                            placeholder="Enter your full name"
+                            aria-label="Full name"
+                            required
+                        >
+                        <small class="form-hint">First and last name</small>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="reg-email">Email Address <span class="required">*</span></label>
+                        <input
+                            type="email"
+                            id="reg-email"
+                            name="email"
+                            placeholder="Enter your email"
+                            aria-label="Email address"
+                            required
+                        >
+                        <small class="form-hint">We'll send confirmation to this email</small>
+                    </div>
+
+                    <!-- Participation Category -->
+                    <div class="form-group">
+                        <label for="category">Participation Category <span class="required">*</span></label>
+                        <select
+                            id="category"
+                            name="category"
+                            aria-label="Select participation category"
+                            required
+                        >
+                            <option value="">-- Select a category --</option>
+                            <option value="student">Student</option>
+                            <option value="professional">Professional</option>
+                            <option value="developer">Developer</option>
+                            <option value="designer">Designer</option>
+                            <option value="entrepreneur">Entrepreneur</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <small class="form-hint">Choose the category that best fits you</small>
+                    </div>
+
+                    <!-- T-Shirt Size (Radio Buttons) -->
+                    <div class="form-group">
+                        <label>T-Shirt Size</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="tshirtSize" value="S"> Small (S)
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="tshirtSize" value="M"> Medium (M)
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="tshirtSize" value="L"> Large (L)
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="tshirtSize" value="XL"> Extra Large (XL)
+                            </label>
+                        </div>
+                        <small class="form-hint">Select your preferred T-shirt size</small>
+                    </div>
+
+                    <!-- Technical Interests (Checkboxes) -->
+                    <div class="form-group">
+                        <label>Technical Interests <span class="required">*</span></label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="AI"> Artificial Intelligence (AI)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="webdev"> Web Development
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="cloud"> Cloud Computing
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="mobile"> Mobile Development
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="devops"> DevOps
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="cyber"> Cybersecurity
+                            </label>
+                        </div>
+                        <small class="form-hint">Select at least one area of interest</small>
+                    </div>
+
+                    <!-- Expectations/Suggestions Textarea -->
+                    <div class="form-group">
+                        <label for="expectations">Expectations/Suggestions <span class="optional">(Optional)</span></label>
+                        <textarea
+                            id="expectations"
+                            name="expectations"
+                            placeholder="Tell us what you expect from this event or any suggestions..."
+                            aria-label="Expectations or suggestions"
+                            maxlength="200"
+                            rows="5"
+                        ></textarea>
+                        <small class="form-hint"><span id="charCount">0</span>/200 characters</small>
+                    </div>
+
+                    <!-- Terms and Conditions -->
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the terms and conditions <span class="required">*</span></label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary btn-block">Register for Tantraz</button>
+
+                    <!-- Reset Button -->
+                    <button type="reset" class="btn btn-secondary btn-block">Clear Form</button>
+
+                </form>
+
+                <!-- Back to Home -->
+                <div class="auth-footer">
+                    <p><a href="index.html" class="link-primary">← Back to Home</a></p>
+                </div>
+
+            </section>
+
+            <!-- Registration Info -->
+            <section class="auth-info">
+                <h2>About Tantraz</h2>
+                <p>Tantraz is an engaging platform for tech professionals, students, and enthusiasts to connect, share, and grow together.</p>
+                <h3>Event Highlights:</h3>
+                <ul>
+                    <li>✓ Expert keynotes and workshops</li>
+                    <li>✓ Networking opportunities</li>
+                    <li>✓ Technical competitions</li>
+                    <li>✓ Exclusive merchandise and food</li>
+                    <li>✓ Certificate of participation</li>
+                    <li>✓ Job opportunities showcase</li>
+                </ul>
+            </section>
+
+        </div>
+
+        <!-- Success Message (Hidden by default) -->
+        <div id="registrationMessage" class="auth-message" style="display: none;"></div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Full Stack Web Development Project. All rights reserved.</p>
+        <p>Session 12 - Professional Event Registration Form</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

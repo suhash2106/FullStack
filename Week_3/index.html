@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Web Project - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Semantic Header -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-brand">FullStack Project</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="ecommerce.html">Shop</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="registration.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>Navigation</h3>
+            <ul class="sidebar-menu">
+                <li><a href="#grid-section">CSS Grid Layout</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="sidebar-widget">
+                <h4>Quick Links</h4>
+                <p>Explore our interactive web technologies demo</p>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <h1>Welcome to Full Stack Web Development</h1>
+                <p>Understand and use web technologies to build interactive applications</p>
+            </section>
+
+            <!-- Grid Layout Section -->
+            <section id="grid-section" class="grid-section">
+                <h2>CSS Grid Layout Example</h2>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <h3>Responsive Grid</h3>
+                        <p>This layout uses CSS Grid with auto-fit for responsiveness</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Session 11</h3>
+                        <p>HTML5 semantic elements and layout techniques</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Session 12</h3>
+                        <p>Explore forms and validation with HTML5</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Session 13</h3>
+                        <p>Responsive design with media queries and Flexbox</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Articles Section -->
+            <section id="articles" class="articles-section">
+                <h2>Featured Articles</h2>
+                <article class="article-card">
+                    <h3>Understanding HTML5 Semantics</h3>
+                    <p>Learn how semantic HTML5 elements improve accessibility and SEO for your web applications.</p>
+                    <small>Published: February 2026</small>
+                </article>
+                <article class="article-card">
+                    <h3>Mastering CSS Grid and Flexbox</h3>
+                    <p>Deep dive into modern CSS layout techniques for creating responsive designs.</p>
+                    <small>Published: February 2026</small>
+                </article>
+            </section>
+
+            <!-- Features Section -->
+            <section id="features" class="features-section">
+                <h2>Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <h4>📱 Responsive Design</h4>
+                        <p>Mobile, tablet, and desktop layouts</p>
+                    </div>
+                    <div class="feature">
+                        <h4>⚡ ES6 JavaScript</h4>
+                        <p>Modern JavaScript features and best practices</p>
+                    </div>
+                    <div class="feature">
+                        <h4>🎨 Beautiful UI</h4>
+                        <p>Clean and modern design patterns</p>
+                    </div>
+                    <div class="feature">
+                        <h4>♿ Accessibility</h4>
+                        <p>ARIA labels and semantic HTML for inclusive design</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="about-section">
+                <h2>About This Project</h2>
+                <p>This is a comprehensive full-stack web development project that demonstrates:</p>
+                <ul>
+                    <li>HTML5 semantic structure</li>
+                    <li>Responsive CSS with Flexbox and Grid</li>
+                    <li>ES6 JavaScript features (destructuring, spread operator, promises)</li>
+                    <li>Form validation and handling</li>
+                    <li>Event management and DOM manipulation</li>
+                    <li>Interactive user experiences</li>
+                </ul>
+            </section>
+
+            <!-- Interactive Demo Section -->
+            <section class="interactive-section">
+                <h2>Interactive Demo</h2>
+                <p>Try our interactive features:</p>
+                <div class="demo-buttons">
+                    <button onclick="demoReceipt()">Calculate Receipt</button>
+                    <button onclick="demoDestructuring()">Show Destructuring</button>
+                    <button onclick="demoSpreadOperator()">Merge Friends Lists</button>
+                    <button onclick="demoPizzaPromise()">Order Pizza</button>
+                </div>
+                <div id="demo-output" class="demo-output"></div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Full Stack Web Development Project. All rights reserved.</p>
+        <p>Course: Understanding Web Technologies for Interactive Applications</p>
+    </footer>
+
+    <!-- Interactive Event Demo Pages -->
+    <div id="interactive-demos" style="margin-top: 40px; padding: 20px; background: #f5f5f5; border-radius: 8px;">
+        <h2>Interactive Events Demo</h2>
+        
+        <!-- Movable Square Demo -->
+        <div class="demo-container">
+            <h3>Move the Square with Arrow Keys</h3>
+            <p>Focus on the square below and press arrow keys</p>
+            <div id="movable-square" class="movable-square"></div>
+            <p id="position-info" class="position-info">Position: (0, 0)</p>
+        </div>
+
+        <!-- Mouse Tracking Demo -->
+        <div class="demo-container">
+            <h3>Mouse Tracking - 4 Quadrants</h3>
+            <p>Move your mouse to see the background color change based on quadrant</p>
+            <div id="quadrant-box" class="quadrant-box">
+                <p>Move mouse here</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

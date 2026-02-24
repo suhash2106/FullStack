@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Full Stack Web Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Semantic Header -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-brand">FullStack Project</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="ecommerce.html">Shop</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="registration.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>Blog Categories</h3>
+            <ul class="sidebar-menu">
+                <li><a href="#web-dev">Web Development</a></li>
+                <li><a href="#design">Design Tips</a></li>
+                <li><a href="#javascript">JavaScript</a></li>
+                <li><a href="#css">CSS Techniques</a></li>
+            </ul>
+            <div class="sidebar-widget">
+                <h4>Recent Posts</h4>
+                <ul class="recent-posts">
+                    <li><a href="#post1">HTML5 Semantics</a></li>
+                    <li><a href="#post2">CSS Grid Mastery</a></li>
+                    <li><a href="#post3">ES6 Features</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Blog Content -->
+        <main class="main-content">
+            <section class="hero-section">
+                <h1>Web Development Blog</h1>
+                <p>Learn modern web technologies and best practices</p>
+            </section>
+
+            <!-- Blog Post 1 -->
+            <article id="post1" class="blog-post" data-category="web-dev">
+                <header class="post-header">
+                    <h2>Understanding HTML5 Semantic Elements</h2>
+                    <p class="post-meta">Posted on <time datetime="2026-02-20">February 20, 2026</time> by <span class="author">Web Dev Team</span></p>
+                </header>
+
+                <div class="post-content">
+                    <p>HTML5 introduced semantic elements that provide meaning to web content. These elements clearly describe their meaning to both the browser and the developer.</p>
+
+                    <h3>Video Content</h3>
+                    <p>Check out this tutorial video:</p>
+                    <video class="media-player" controls poster="https://via.placeholder.com/600x300">
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <h3>Key Semantic Elements</h3>
+                    <ul>
+                        <li><code>&lt;header&gt;</code> - Defines a header for a document or section</li>
+                        <li><code>&lt;nav&gt;</code> - Defines navigation links</li>
+                        <li><code>&lt;main&gt;</code> - Specifies the main content of document</li>
+                        <li><code>&lt;article&gt;</code> - Defines independent content</li>
+                        <li><code>&lt;section&gt;</code> - Defines a section in document</li>
+                        <li><code>&lt;aside&gt;</code> - Defines content aside from page content</li>
+                        <li><code>&lt;footer&gt;</code> - Defines a footer for a document or section</li>
+                    </ul>
+
+                    <p>Using these semantic elements improves accessibility, SEO, and code readability.</p>
+                </div>
+
+                <footer class="post-footer">
+                    <p><strong>Category:</strong> Web Development | <strong>Reading Time:</strong> 5 min</p>
+                </footer>
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article id="post2" class="blog-post" data-category="css">
+                <header class="post-header">
+                    <h2>Mastering CSS Grid and Flexbox</h2>
+                    <p class="post-meta">Posted on <time datetime="2026-02-22">February 22, 2026</time> by <span class="author">CSS Expert</span></p>
+                </header>
+
+                <div class="post-content">
+                    <p>CSS Grid and Flexbox are powerful layout tools for creating responsive designs. Let's explore their differences and use cases.</p>
+
+                    <h3>Audio Podcast</h3>
+                    <p>Listen to our podcast about CSS layouts:</p>
+                    <audio class="media-player" controls>
+                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+
+                    <h3>CSS Grid vs Flexbox</h3>
+                    <table class="comparison-table">
+                        <tr>
+                            <th>Feature</th>
+                            <th>CSS Grid</th>
+                            <th>Flexbox</th>
+                        </tr>
+                        <tr>
+                            <td>Dimension</td>
+                            <td>2D (rows and columns)</td>
+                            <td>1D (rows or columns)</td>
+                        </tr>
+                        <tr>
+                            <td>Best For</td>
+                            <td>Page layouts</td>
+                            <td>Component layouts</td>
+                        </tr>
+                        <tr>
+                            <td>Browser Support</td>
+                            <td>Modern browsers</td>
+                            <td>Wide browser support</td>
+                        </tr>
+                    </table>
+
+                    <p>Choose the right layout tool based on your project requirements!</p>
+                </div>
+
+                <footer class="post-footer">
+                    <p><strong>Category:</strong> CSS | <strong>Reading Time:</strong> 7 min</p>
+                </footer>
+            </article>
+
+            <!-- Blog Post 3 -->
+            <article id="post3" class="blog-post" data-category="javascript">
+                <header class="post-header">
+                    <h2>ES6 Features Every Developer Should Know</h2>
+                    <p class="post-meta">Posted on <time datetime="2026-02-24">February 24, 2026</time> by <span class="author">JS Developer</span></p>
+                </header>
+
+                <div class="post-content">
+                    <p>ES6 (ECMAScript 2015) revolutionized JavaScript development. Here are essential features you should master:</p>
+
+                    <h3>Featured Video</h3>
+                    <p>Watch this comprehensive ES6 overview:</p>
+                    <video class="media-player" controls poster="https://via.placeholder.com/600x300">
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <h3>Key ES6 Features</h3>
+                    <ul>
+                        <li><strong>Arrow Functions:</strong> Concise function syntax</li>
+                        <li><strong>Destructuring:</strong> Extract values from objects and arrays</li>
+                        <li><strong>Template Literals:</strong> String interpolation with backticks</li>
+                        <li><strong>Spread Operator:</strong> Expand arrays and objects</li>
+                        <li><strong>Promises:</strong> Handle asynchronous operations</li>
+                        <li><strong>Classes:</strong> Object-oriented programming</li>
+                        <li><strong>Modules:</strong> Import and export code</li>
+                    </ul>
+
+                    <p>Master these features to write modern, efficient JavaScript code!</p>
+
+                    <h3>Interactive Code Example</h3>
+                    <pre><code>// ES6 Arrow Function
+const greet = (name) => `Hello, ${name}!`;
+
+// Destructuring
+const { name, age } = { name: 'John', age: 30 };
+
+// Spread Operator
+const arr = [1, 2, 3];
+const newArr = [...arr, 4, 5];
+
+// Promise
+const promise = new Promise((resolve, reject) => {
+  setTimeout(() => resolve('Success!'), 1000);
+});</code></pre>
+                </div>
+
+                <footer class="post-footer">
+                    <p><strong>Category:</strong> JavaScript | <strong>Reading Time:</strong> 8 min</p>
+                </footer>
+            </article>
+
+            <!-- Blog Post 4 -->
+            <article id="post4" class="blog-post" data-category="design">
+                <header class="post-header">
+                    <h2>Responsive Web Design Best Practices</h2>
+                    <p class="post-meta">Posted on <time datetime="2026-02-23">February 23, 2026</time> by <span class="author">Design Specialist</span></p>
+                </header>
+
+                <div class="post-content">
+                    <p>Creating responsive designs requires careful planning and testing. Follow these best practices to build sites that work on all devices.</p>
+
+                    <h3>Mobile-First Approach</h3>
+                    <p>Start with mobile design and progressively enhance for larger screens. This ensures better performance and user experience.</p>
+
+                    <h3>Media Query Breakpoints</h3>
+                    <ul>
+                        <li><strong>Mobile:</strong> &lt; 600px</li>
+                        <li><strong>Tablet:</strong> 600px - 1024px</li>
+                        <li><strong>Desktop:</strong> &gt; 1024px</li>
+                    </ul>
+
+                    <p>Use flexible grids, flexible images, and CSS media queries to create truly responsive layouts.</p>
+                </div>
+
+                <footer class="post-footer">
+                    <p><strong>Category:</strong> Design | <strong>Reading Time:</strong> 6 min</p>
+                </footer>
+            </article>
+
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Full Stack Web Development Project. All rights reserved.</p>
+        <p>Blog Section - Learn and Share Web Development Knowledge</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
